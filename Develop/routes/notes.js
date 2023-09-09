@@ -28,7 +28,7 @@ notes.post('/', (req, res) => {
         readAndAppend(newPost, './db/db.json');
         res.json(`Data added successfully 🚀`);
     } else {
-        res.error('Error in adding tip');
+        res.error('Error in adding data');
     }
 });
 
