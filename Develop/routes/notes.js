@@ -1,5 +1,8 @@
 const notes = require('express').Router();
+//helpers not being used anywhere else so it's okay to put it here for now
 const util = require('util');
+const fs = require('fs');
+
 
 const readFromFile = util.promisify(fs.readFile);
 
